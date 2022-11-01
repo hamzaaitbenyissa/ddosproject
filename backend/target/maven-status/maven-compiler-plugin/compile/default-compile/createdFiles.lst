@@ -1,0 +1,4 @@
+com\benyissa\feedbackpsapi\entities\Feedback.class
+com\benyissa\feedbackpsapi\FeedbackpsapiApplication.class
+com\benyissa\feedbackpsapi\repositories\FeedbackRepository.class
+com\benyissa\feedbackpsapi\web\FeedbackController.class
