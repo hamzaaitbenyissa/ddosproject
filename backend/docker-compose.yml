@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  app:
+    depends_on:
+      - mysqldb
+    build: .
+    restart: always
+    ports:
+      - 8082:8082
+
+  mysqldb:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: feedbacks
+      MYSQL_ROOT_PASSWORD: benyissa
+      MYSQL_PASSWORD: benyissa
+      MYSQL_USER: benyissa
+    ports:
+      - "3307:3306"
+
+
