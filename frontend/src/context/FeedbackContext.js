@@ -37,9 +37,7 @@ export const FeedbackProvider = ({ children }) => {
       if (result.isConfirmed) {
         fetch(API_URL + "/feedbacks/" + id, { method: "DELETE" }).then(
           (res) => {
-            res.json().then((result) => {
-              setfeedback(feedback.filter((item) => item.id !== id));
-            });
+            setfeedback(feedback.filter((item) => item.id !== id));
           },
           (error) => {
             Swal.fire({
